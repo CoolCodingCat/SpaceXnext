@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!-- Bienvenue sur ce site : pour plus d'infos contactez moi sur LinkedIn -> Lisa Korrigane -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space X Launch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h1>Space X Next Launch</h1>
+            </div>
+            
+    
+            <button class="goapi button is-info is-large is-rounded is-fullwidth is-small">
+                <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span><span>When is the next launch?</span></button>
+        <div class="answer">
+            <div id="apistuff"></div>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                  <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                      <article class="tile is-child notification is-info">
+                        <p class="title">Mission Name:</p>
+                        <p class="subtitle" id="name"></p>
+                      </article>
+                      <article class="tile is-child notification is-primary">
+                        <p class="title">Launch Site</p>
+                        <p class="subtitle" id="site"></p>
+                      </article>
+                      <article class="tile is-child notification is-info">
+                        <p class="title">Rocket Type:</p>
+                        <p class="subtitle" id="rocket"></p>
+                      </article>
+                    </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <p class="title">Launch Date:</p>
+                            <p class="subtitle" id="date"></p>
+                          </article>
+                          <article class="tile is-child notification is-info">
+                            <p class="title">Launch Time (UTC):</p>
+                            <p class="subtitle" id="time"></p>
+                          </article>
+                          <article class="tile is-child notification is-primary">
+                            <p class="title">Flight Number</p>
+                            <p class="subtitle" id="number"></p>
+                          </article>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification is-info">
+                        <p class="title">Crew:</p>
+                        <p class="subtitle" id="crew_details"></p>
+                      <div class="content">
+                        <!-- Content -->
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification is-info">
+                    <div class="content">
+                        <p class="title">Mission Details:</p>
+                        <p class="subtitle" id="details"></p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+        </div>
+           <!--  <div class="tile is-ancestor">
+                
+            </div>
+
+
+
+
+
+
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                      <div class="tile is-parent is-vertical is-4">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Mission Name:</p>
+                            <p class="subtitle" id="name"></p>
+                        </article>
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Crew:</p>
+                            <p class="subtitle" id="crew_details"></p>
+                        </article>
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Rocket Type:</p>
+                            <p class="subtitle" id="rocket"></p>
+                        </article>
+                    </div>
+                    </div>
+                        <div class="tile is-parent is-vertical is-4">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Launch Date:</p>
+                                <p class="subtitle" id="date"></p>
+                              </article>
+                              <article class="tile is-child notification is-info">
+                                <p class="title">Launch Time:</p>
+                                <p class="subtitle" id="time"></p>
+                              </article>
+                              <article class="tile is-child notification is-info">
+                                <p class="title">Flight Number</p>
+                                <p class="subtitle" id="number"></p>
+                              </article>
+                        </div>
+                        <div class="tile is-parent is-8">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Launch Site</p>
+                                <p class="subtitle" id="site"></p>
+                              </article>
+                        </div>
+                    </div>
+                        
+                          
+                          
+                          
+                          <div class="tile is-parent is-4">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Mission Details:</p>
+                                <p class="subtitle" id="details"></p>
+                              </article>
+                          </div>
+                          
+                          
+                      
+                    
+                </div>
+            </div>
+
+        </div>
+            
+        </div> -->
+
+        
+
+
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
