@@ -1,4 +1,21 @@
 
+@font-face{
+  font-family: Centauri;
+  src: url(../fonts/Centauri.woff);
+}
+@font-face{
+    font-family: Ginthul;
+    src: url(../fonts/Ginthul.woff);
+  }
+  @font-face{
+    font-family: Amazone;
+    src: url(../fonts/Amazone.woff);
+  }
+  @font-face{
+    font-family: SchoonerScript;
+    src: url(../fonts/SchoonerScript.woff);
+  }
+
 html { 
     background: url("../ressources/bckgr.png") repeat center center fixed; 
     -webkit-background-size: cover;
@@ -7,10 +24,8 @@ html {
     background-size: cover;
     }
 h1 {
-    color: #3298DC !important;
-    text-align: center;
     margin-bottom: 4rem !important;
-       
+    font-family: SchoonerScript, Ginthul, Tahoma, sans-serif;     
 }
 button {
     margin-top: 12rem !important;
@@ -22,4 +37,12 @@ button {
 .remove {
     display: none;
     opacity: 0;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-left: 30px;
+    
 }
