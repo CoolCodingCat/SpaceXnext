@@ -65,7 +65,7 @@ button, .coming-soon {
 }
 @media screen and (min-width: 769px){
   button, .coming-soon {
-    width: 500px;
+    width: 350px;
   }
 }
 .menu-section{
