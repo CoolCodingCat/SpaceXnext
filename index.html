@@ -11,23 +11,42 @@
 </head>
 
 <body>
-    <section class="section">
+    
         <div class="container">
-          <img class="logo" src="./ressources/spacex-logo-inverted.png" alt="space X logo">
+          <img class="logo-space" src="./ressources/spacex-logo-inverted.png" alt="space X logo">
             <div class="content">
               
                 <h1 class="has-text-light has-text-centered is-size-1">Next Flight</h1>
             </div>
-            
-            <div class="has-text-centered">
-              <button class="goapi button is-info is-large is-rounded is-fullwidth-mobile is-small">
-                <span class="icon">
-                    <i class="fas fa-rocket"></i>
-                  </span><span>When is the next launch?</span></button>
+            <div clas="content">
+              <p class="return-home has-text-centered"><a class="delete is-large"></a></p>
             </div>
+            <section class="menu-section">
+              <div class="has-text-centered">
+                <button class="menu-button goapi button is-info is-large is-block is-rounded is-fullwidth-mobile">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span><span>THE NEXT LAUNCH</span>
+                </button>
+                <button class="menu-button upcoming button is-info is-block is-large is-rounded is-fullwidth-mobile">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span><span>ALL UPCOMING LAUNCHES</span>
+                </button>
+                <button class="menu-button the-rockets button is-info is-block is-large is-rounded is-fullwidth-mobile">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span><span>THE ROCKETS</span>
+                </button>
+              </div>
+            </section>
             
+            <div class="coming-soon notification is-danger has-text-centered is-large content">
+              <p>COMING SOON</p>
+            </div>
+            <section class="section">
         <div class="answer">
-            <div id="apistuff"></div>
+            <div id="apistuff "></div>
 
             <div class="tile is-ancestor">
                 <div class="tile is-vertical is-8">
@@ -45,30 +64,35 @@
                         <p class="title">Rocket Type:</p>
                         <p class="subtitle" id="rocket"></p>
                       </article>
+                      <article class="tile is-child notification is-primary">
+                        <p class="title">Crew:</p>
+                        <p class="subtitle" id="crew_details"></p>
+                    </article>
                     </div>
                     <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Launch Date:</p>
-                            <p class="subtitle" id="date"></p>
-                          </article>
-                          <article class="tile is-child notification is-info">
-                            <p class="title">Launch Time (UTC):</p>
-                            <p class="subtitle" id="time"></p>
-                          </article>
-                          <article class="tile is-child notification is-primary">
-                            <p class="title">Flight Number</p>
-                            <p class="subtitle" id="number"></p>
-                          </article>
+                      <article class="tile is-child notification is-primary">
+                        <p class="title">Launch Date:</p>
+                        <p class="subtitle" id="date"></p>
+                      </article>
+                      <article class="tile is-child notification is-info">
+                        <p class="title">Launch Time (UTC):</p>
+                        <p class="subtitle" id="time"></p>
+                      </article>
+                      <article class="tile is-child notification is-primary">
+                        <p class="title">Flight Number</p>
+                        <p class="subtitle" id="number"></p>
+                      </article>
+                      <article class="tile is-child notification is-info">
+                        <p class="title">Clients:</p>
+                        <ol class="subtitle" id="client"></ol>
+                      </article>
                     </div>
                   </div>
                   <div class="tile is-parent">
-                    <article class="tile is-child notification is-info">
-                        <p class="title">Crew:</p>
-                        <p class="subtitle" id="crew_details"></p>
-                      <div class="content">
-                        <!-- Content -->
-                      </div>
-                    </article>
+                    <article class="tile is-child notification is-primary">
+                      <p class="title">Payload:</p>
+                      <p class="subtitle" id="payload"></p>
+                  </article>
                   </div>
                 </div>
                 <div class="tile is-parent">
@@ -80,6 +104,7 @@
                   </article>
                 </div>
               </div>
+              
 
         </div>
            <!--  <div class="tile is-ancestor">

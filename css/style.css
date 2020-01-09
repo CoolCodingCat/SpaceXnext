@@ -15,6 +15,18 @@
     font-family: SchoonerScript;
     src: url(../fonts/SchoonerScript.woff);
   }
+  @font-face{
+    font-family: Polaris;
+    src: url(../fonts/Polaris.woff2);
+  }
+  @font-face{
+    font-family: HalcyonRegular;
+    src: url(../fonts/HalcyonRegular.woff);
+  }
+  @font-face{
+    font-family: Martian;
+    src: url(../fonts/Martian.woff);
+  }
 
 html { 
     background: url("../ressources/bckgr.png") repeat center center fixed; 
@@ -24,11 +36,17 @@ html {
     background-size: cover;
     }
 h1 {
-    margin-bottom: 4rem !important;
-    font-family: SchoonerScript, Ginthul, Tahoma, sans-serif;     
+    font-family: SchoonerScript, Ginthul, Tahoma, sans-serif;
 }
-button {
-    margin-top: 12rem !important;
+button, .coming-soon {
+    margin-top: 2rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Martian, sans-serif;
+    
+}
+.title {
+  font-family: Martian, sans-serif;
 }
 .hidden {
     visibility: hidden;
@@ -38,11 +56,18 @@ button {
     display: none;
     opacity: 0;
 }
-.logo {
+.logo-space {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 300px;
     padding-left: 30px;
+    margin: 2rem auto 0px auto;
     
+}
+@media screen and (min-width: 769px){
+  button, .coming-soon {
+    width: 500px;
+  }
+}
+.menu-section{
+  margin-top: 4rem;
 }
